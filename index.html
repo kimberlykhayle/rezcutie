@@ -73,10 +73,15 @@
             <p>Forever yours,</p>
             <p>Kayce</p>
         </div>
-<audio controls>
+<audio id="myAudio" controls>
     <source src="https://www.dropbox.com/scl/fi/gw52igdvcjaqkfri4dtqo/wwd.mp3juice.blog-Alexandra-Reality-Club-Official-Lyric-Video.mp3?rlkey=vw0r2e20hrlwkpjf7xyejc7vk&st=nff4iskn&raw=1" type="audio/mpeg">
-    Your browser does not support the audio element.
 </audio>
+
+<script>
+    document.addEventListener("click", function() {
+        document.getElementById("myAudio").play();
+    }, { once: true }); // Ensures autoplay only triggers on the first click
+</script>
 
 </body>
 </html>
